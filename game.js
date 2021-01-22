@@ -1,12 +1,12 @@
 function music() {
-    let nhac = new Audio()
+    let nhac = new Audio('media/nhac.mp3');
 }
 
 function quaySo(){
     let numb=[1,2,3,3,3,3,4,1]
     for (let i=0;i<8;i++){
         for (let j=0;j<numb[i];j++){
-            document.getElementById(`price${i}-${j}`).innerHTML=Math.floor(Math.random()*99999);
+            document.getElementById(`price${i}-${j}`).innerHTML=Math.floor(Math.random()*99999)+1;
         }
     }
     x.setResult();
@@ -15,8 +15,20 @@ function quaySo(){
          y.getTrue(num)
          clearInterval(myArr);
      }
-     document.getElementById('date').innerHTML=new Date()
+     document.getElementById('date').innerHTML=new Date();
+     tien();
 }
+
+function tien() {
+    let cash = +document.getElementById('money').value;
+    cash -= 10000;
+    document.getElementById('money').value = cash;
+    if (cash==0){
+        alert('bạn đã hết tiền');
+        location.replace('index.html');
+    }
+}
+
 class loto{
     constructor(date) {
         this.date=date;
@@ -91,6 +103,7 @@ class gameLoto{
             for (let j=0;j<this.lotery[i].length;j++){
                 if (this.lotery[i].includes(number)){
                     alert('Chúc mừng bạn đã trúng giải !!! ' +i);
+                    tien()+10000;
                     return ;
                 }
             }

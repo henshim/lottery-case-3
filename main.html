@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game xổ số</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body onload="music()" background="media/nen.jpg">
+<audio src="media/nhac.mp3" loop autoplay></audio>
+<div class="than">
+    <p style="background-color: yellow" class="main">Nhập số bạn muốn
+    <input type="number" id="nhapso">
+    Số tiền hiện có: <input type="number" disabled id="money" value="100000"><br>
+    <button id="button1" onclick="quaySo()" style="margin-top: 10px; margin-left: 200px">Thử vận may nào !!!</button>
+    </p>
+    <div class="tTrong">
+        <table style="background: white" cellspacing="0" cellpadding="10" border="1px">
+            <div class="bang">
+                <th colspan="5">Công ty xổ số điện toán<br> <span id="date"></span></th>
+                <tr>
+                    <td><strong>Đặc biệt</strong></td>
+                    <td id="price7-0" colspan="4"><strong></strong></td>
+                </tr>
+                <tr>
+                    <td>Giải nhất</td>
+                    <td id="price0-0" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>Giải nhì</td>
+                    <td id="price1-0" colspan="2"></td>
+                    <td id="price1-1" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Giải ba</td>
+                    <td id="price2-0"></td>
+                    <td id="price2-1" colspan="2"></td>
+                    <td id="price2-2"></td>
+                </tr>
+                <tr>
+                    <td>Giải tư</td>
+                    <td id="price3-0"></td>
+                    <td id="price3-1" colspan="2"></td>
+                    <td id="price3-2"></td>
+                </tr>
+                <tr>
+                    <td>Giải năm</td>
+                    <td id="price4-0"></td>
+                    <td id="price4-1" colspan="2"></td>
+                    <td id="price4-2"></td>
+                </tr>
+                <tr>
+                    <td>Giải sáu</td>
+                    <td id="price5-0"></td>
+                    <td id="price5-1" colspan="2"></td>
+                    <td id="price5-2"></td>
+                </tr>
+                <tr>
+                    <td>Giải bảy</td>
+                    <td id="price6-0"></td>
+                    <td id="price6-1"></td>
+                    <td id="price6-2"></td>
+                    <td id="price6-3"></td>
+                </tr>
+            </div>
+        </table>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+<script src="game.js"></script>
+</html>

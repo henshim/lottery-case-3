@@ -1,0 +1,71 @@
+td {
+    width: 100px;
+    text-align: center;
+}
+
+td:hover {
+    background-color: greenyellow;
+}
+
+.than {
+    margin-left: 380px;
+    padding-top: 25px;
+    padding-left: 30px;
+    width: 50%;
+    height: 470px;
+background-color: orange;
+}
+
+.tTrong {
+    padding-top: 10px;
+}
+
+.main {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: -10px;
+    margin-right: 30px;
+    padding-left: 30px;
+}
+.move{
+    animation-name:key1 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes key1 {
+    25% {background-color: greenyellow}
+    50%{background-color: blue}
+    75%{background-color: red}
+    100%{background-color: orange}
+}
+.b1{
+    border: 1px solid;
+    background-color: white;
+    width: 10%;
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    margin-left: 420px;
+    margin-top: 200px;
+}
+.b2{
+    border: 1px solid;
+    margin-left: 800px;
+    background: white;
+    width: 10%;
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    margin-top: -50px;
+}
+#doi:hover{
+    background-color: red;
+    color: white;
+}
+#doi2:hover{
+    background-color: blue;
+color: white;
+}
+a{
+    color: black;
+}
